@@ -12,8 +12,7 @@ This free time calculator allows you to add and subtract time values using days,
 3. Activate the [Time Calculator](https://www.calculator.io/time-calculator/ "Time Calculator Homepage") plugin through the "Plugins" menu in WordPress.
 
 ## Usage
-* Add the shortcode `[ci_time_calculator]` to your page or post and configure default mortgage parameters.
-* If you are using widgets, just add the Time Calculator to the sidebar through the `Appearance -> Widgets -> Time Calculator` menu in WordPress.
+* Add the shortcode `[ci_time_calculator]` to your page, post or sidebar.
 * Add the following code: `<?php display_ci_time_calculator(); ?>` to your template where you would like the Time Calculator to appear.
 
 ## Libraries in Use

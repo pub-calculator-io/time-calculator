@@ -13,7 +13,7 @@ This free time calculator allows you to add and subtract time values using days,
 
 ## Usage
 * Add the shortcode `[ci_time_calculator]` to your page, post or sidebar.
-* Add the following code: `<?php display_ci_time_calculator(); ?>` to your template where you would like the Time Calculator to appear.
+* Or add the following code: `<?php display_ci_time_calculator(); ?>` to your template where you would like the Time Calculator to appear.
 
 ## Libraries in Use
 1. https://mathjs.org/

@@ -13,6 +13,8 @@ This free time calculator allows you to add and subtract time values using days,
 
 This free time calculator allows you to add and subtract time values using days, hours, minutes, and seconds. Learn about the different concepts of time here as well.
 
+[Time Calculator Homepage](https://www.calculator.io/time-calculator/ "Time Calculator Homepage")
+
 __Shortcode__
 
 Use the Time Calculator shortcode:

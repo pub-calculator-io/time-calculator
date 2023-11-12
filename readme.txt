@@ -13,34 +13,35 @@ This free time calculator allows you to add and subtract time values using days,
 
 This free time calculator allows you to add and subtract time values using days, hours, minutes, and seconds. Learn about the different concepts of time here as well.
 
-[Time Calculator Homepage](https://www.calculator.io/time-calculator/ "Time Calculator Homepage")
+[https://www.calculator.io/time-calculator/](https://www.calculator.io/time-calculator/)
 
-__Shortcode__
-
-Use the Time Calculator shortcode:
+__Time Calculator Shortcode__
 
 `[ci_time_calculator]`
-
-Libraries in use:
-1. https://mathjs.org/
-2. https://katex.org/
-3. https://github.com/aFarkas/lazysizes
-4. https://github.com/RobinHerbots/Inputmask
-5. https://air-datepicker.com/
-6. https://www.chartjs.org/
 
 == Installation ==
 
 1. Upload the /ci_time_calculator/ folder to the /wp-content/plugins/ directory.
 2. Activate the [Time Calculator](https://www.calculator.io/time-calculator/ "Time Calculator Homepage") plugin through the "Plugins" menu in WordPress.
 
-== Usage ==
+== Time Calculator Usage ==
+
 * Add the shortcode `[ci_time_calculator]` to your page, post or sidebar.
 * Add the following code: `<?php display_ci_time_calculator(); ?>` to your template where you would like the Time Calculator to appear.
 
 == Screenshots ==
+
 1. The Time Calculator Input Form.
 2. The Time Calculator Calculation Results.
+
+== Libraries used in Time Calculator ==
+
+1. https://mathjs.org/
+2. https://katex.org/
+3. https://github.com/aFarkas/lazysizes
+4. https://github.com/RobinHerbots/Inputmask
+5. https://air-datepicker.com/
+6. https://www.chartjs.org/
 
 == Changelog ==
 

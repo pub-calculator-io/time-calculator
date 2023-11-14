@@ -9,41 +9,29 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 This free time calculator allows you to add and subtract time values using days, hours, minutes, and seconds. Learn about the different concepts of time here as well.
 
-== Description ==
-
-This free time calculator allows you to add and subtract time values using days, hours, minutes, and seconds. Learn about the different concepts of time here as well.
-
 [https://www.calculator.io/time-calculator/](https://www.calculator.io/time-calculator/)
 
-__Time Calculator Shortcode__
+== Usage ==
+
+Add the Time Calculator shortcode to your page, post or sidebar:
 
 `[ci_time_calculator]`
 
-== Installation ==
+Add the following code to your template where you would like the Time Calculator to appear:
 
-1. Upload the /ci_time_calculator/ folder to the /wp-content/plugins/ directory.
-2. Activate the [Time Calculator](https://www.calculator.io/time-calculator/ "Time Calculator Homepage") plugin through the "Plugins" menu in WordPress.
-
-== Time Calculator Usage ==
-
-* Add the shortcode `[ci_time_calculator]` to your page, post or sidebar.
-* Add the following code: `<?php display_ci_time_calculator(); ?>` to your template where you would like the Time Calculator to appear.
+`<?php display_ci_time_calculator(); ?>`
 
 == Screenshots ==
 
 1. The Time Calculator Input Form.
 2. The Time Calculator Calculation Results.
 
-== Libraries used in Time Calculator ==
+== Installation ==
 
-1. https://mathjs.org/
-2. https://katex.org/
-3. https://github.com/aFarkas/lazysizes
-4. https://github.com/RobinHerbots/Inputmask
-5. https://air-datepicker.com/
-6. https://www.chartjs.org/
+1. Upload the Time Calculator /ci_time_calculator/ folder to the /wp-content/plugins/ directory.
+2. Activate the Time Calculator plugin through the "Plugins" menu in WordPress.
 
 == Changelog ==
 
 = 1.0.0 =
-* Initial release
+* Initial release of Time Calculator

@@ -1,6 +1,6 @@
 === Time Calculator by Calculator.iO ===
 Contributors: calculatorio
-Tags: 
+Tags: time calculator, add time, subtract time, days, hours, minutes, seconds, time duration calculation, time point equation
 Requires at least: 5.0
 Tested up to: 6.4.0
 Stable tag: 1.0.0

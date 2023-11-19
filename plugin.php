@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Time Calculator by www.calculator.io
+Plugin Name: CI Time calculator
 Plugin URI: https://www.calculator.io/time-calculator/
 Description: This free time calculator allows you to add and subtract time values using days, hours, minutes, and seconds. Learn about the different concepts of time here as well.
 Version: 1.0.0

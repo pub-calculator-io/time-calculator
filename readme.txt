@@ -1,4 +1,4 @@
-=== Time Calculator ===
+=== Time Calculator by www.calculator.io ===
 Contributors: calculatorio
 Tags: time calculator, add time, subtract time, days, hours, minutes, seconds, time duration calculation, time point equation
 Requires at least: 5.0

@@ -18,11 +18,14 @@ function calculate() {
 	else {
 		totalSeconds = seconds1 - seconds2;
 	}
+	const days = (totalSeconds / (3600 * 24)).toFixed(2);
+	const hours = (totalSeconds / 3600).toFixed(2);
+	const minutes = (totalSeconds / 60).toFixed(2);
 	_('result').innerHTML = toDaysMinutesSeconds(totalSeconds);
-	_('result-in-days').innerHTML = 'or ' + plural(+(totalSeconds / (3600 * 24)).toFixed(8), 'd');
-	_('result-in-hours').innerHTML = 'or '  + plural(+(totalSeconds / 3600).toFixed(5), 'h');
-	_('result-in-minutes').innerHTML = 'or ' + plural(+(totalSeconds / 60).toFixed(5), 'm');
-	_('result-in-seconds').innerHTML = 'or ' + plural(totalSeconds, 's');
+	_('result-in-days').innerHTML = 'or ' + plural(days, 'days:day:days:days:days:days');
+	_('result-in-hours').innerHTML = 'or '  + plural(hours, 'hours:hour:hours:hours:hours:hours');
+	_('result-in-minutes').innerHTML = 'or ' + plural(minutes, 'minutes:minute:minutes:minutes:minutes:minutes');
+	_('result-in-seconds').innerHTML = 'or ' + plural(totalSeconds, 'seconds:second:seconds:seconds:seconds:seconds');
 }
 
 function toDaysMinutesSeconds(totalSeconds){
@@ -31,20 +34,9 @@ function toDaysMinutesSeconds(totalSeconds){
 	const minutes = Math.floor((totalSeconds % 3600) / 60);
 	const hours = Math.floor((totalSeconds % (3600 * 24)) / 3600);
 	const days = Math.floor(totalSeconds / (3600 * 24));
-	result += plural(days, 'd') + ' ';
-	result += plural(hours, 'h') + ' ';
-	result += plural(minutes, 'm') + ' ';
-	result += plural(seconds, 's');
+	result += plural(days, 'days:day:days:days:days:days') + ' ';
+	result += plural(hours, 'hours:hour:hours:hours:hours:hours') + ' ';
+	result += plural(minutes, 'minutes:minute:minutes:minutes:minutes:minutes') + ' ';
+	result += plural(seconds, 'seconds:second:seconds:seconds:seconds:seconds');
 	return result;
-}
-
-function plural(number, label) {
-	if (label === 'd') return number === 1 ? number + ' day' : number + ' days';
-
-	if (label === 'h') return number === 1 ? number + ' hour' : number + ' hours';
-
-	if (label === 'm') return number === 1 ? number + ' minute' : number + ' minutes';
-
-	if (label === 's') return number === 1 ? number + ' second' : number + ' seconds';
-
 }

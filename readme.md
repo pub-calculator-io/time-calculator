@@ -3,7 +3,6 @@
 This free time calculator allows you to add and subtract time values using days, hours, minutes, and seconds. Learn about the different concepts of time here as well.
 
 ![Time Calculator Input Form](/assets/images/screenshot-1.png "Time Calculator Input Form")
-![Time Calculator Calculation Results](/assets/images/screenshot-2.png "Time Calculator Calculation Results")
 
 ## Installation
 

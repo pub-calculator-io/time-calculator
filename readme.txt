@@ -24,7 +24,6 @@ Add the following code to your template where you would like the Time Calculator
 == Screenshots ==
 
 1. The Time Calculator Input Form.
-2. The Time Calculator Calculation Results.
 
 == Installation ==
 

@@ -28,7 +28,7 @@
             <div class="calculator-setting" id="calculator_form">
                 <div class="calculator-content col">
                 	<div class="input-wrapper row">
-                		<label class="input col   ">
+                		<label class="input col age-calculator,time-duration-calculator,date-calculator,time-to-decimal-calculator,days-calculator  ">
                 			<p class="input__title">Day</p>
                 			<div class="input-field row">
                 				<input type="text" class="input-field__input" placeholder=""  id="one_day" value="125"  />
@@ -42,7 +42,7 @@
                 					<span class="input-hints__hint input-hints__hint--comma">,</span>
                 					<button class="input-hints__hint" onclick="setValue('one_day', '5')">5</button>
                 			</div>
-                		</label>		<label class="input col   ">
+                		</label>		<label class="input col age-calculator,time-duration-calculator,date-calculator,time-to-decimal-calculator,days-calculator  ">
                 			<p class="input__title">Hour</p>
                 			<div class="input-field row">
                 				<input type="text" class="input-field__input" placeholder=""  id="one_hour" value="7"  />
@@ -56,7 +56,7 @@
                 					<span class="input-hints__hint input-hints__hint--comma">,</span>
                 					<button class="input-hints__hint" onclick="setValue('one_hour', '10')">10</button>
                 			</div>
-                		</label>		<label class="input col   ">
+                		</label>		<label class="input col age-calculator,time-duration-calculator,date-calculator,time-to-decimal-calculator,days-calculator  ">
                 			<p class="input__title">Minute</p>
                 			<div class="input-field row">
                 				<input type="text" class="input-field__input" placeholder=""  id="one_minute" value="15"  />
@@ -70,7 +70,7 @@
                 					<span class="input-hints__hint input-hints__hint--comma">,</span>
                 					<button class="input-hints__hint" onclick="setValue('one_minute', '30')">30</button>
                 			</div>
-                		</label>		<label class="input col   ">
+                		</label>		<label class="input col age-calculator,time-duration-calculator,date-calculator,time-to-decimal-calculator,days-calculator  ">
                 			<p class="input__title">Second</p>
                 			<div class="input-field row">
                 				<input type="text" class="input-field__input" placeholder=""  id="one_second" value="30"  />
@@ -107,7 +107,7 @@
                 		</label>
                 	</div>
                 	<div class="input-wrapper row">
-                		<label class="input col   ">
+                		<label class="input col age-calculator,time-duration-calculator,date-calculator,time-to-decimal-calculator,days-calculator  ">
                 			<p class="input__title">Day</p>
                 			<div class="input-field row">
                 				<input type="text" class="input-field__input" placeholder=""  id="two_day" value="225"  />
@@ -121,7 +121,7 @@
                 					<span class="input-hints__hint input-hints__hint--comma">,</span>
                 					<button class="input-hints__hint" onclick="setValue('two_day', '5')">5</button>
                 			</div>
-                		</label>		<label class="input col   ">
+                		</label>		<label class="input col age-calculator,time-duration-calculator,date-calculator,time-to-decimal-calculator,days-calculator  ">
                 			<p class="input__title">Hour</p>
                 			<div class="input-field row">
                 				<input type="text" class="input-field__input" placeholder=""  id="two_hour" value="12"  />
@@ -135,7 +135,7 @@
                 					<span class="input-hints__hint input-hints__hint--comma">,</span>
                 					<button class="input-hints__hint" onclick="setValue('two_hour', '10')">10</button>
                 			</div>
-                		</label>		<label class="input col   ">
+                		</label>		<label class="input col age-calculator,time-duration-calculator,date-calculator,time-to-decimal-calculator,days-calculator  ">
                 			<p class="input__title">Minute</p>
                 			<div class="input-field row">
                 				<input type="text" class="input-field__input" placeholder=""  id="two_minute" value="25"  />
@@ -149,7 +149,7 @@
                 					<span class="input-hints__hint input-hints__hint--comma">,</span>
                 					<button class="input-hints__hint" onclick="setValue('two_minute', '30')">30</button>
                 			</div>
-                		</label>		<label class="input col   ">
+                		</label>		<label class="input col age-calculator,time-duration-calculator,date-calculator,time-to-decimal-calculator,days-calculator  ">
                 			<p class="input__title">Second</p>
                 			<div class="input-field row">
                 				<input type="text" class="input-field__input" placeholder=""  id="two_second" value="20"  />
@@ -171,13 +171,15 @@
                 
                 
                 
-                	<button class="button button--primary ml-auto" onclick="calculate(this)">Calculate</button>
+                	<button class="button button--primary ml-auto" onclick="calculate(this); animateElements();" data-action="calculate" id="action-button">Calculate</button>
                 </div>
                 
                 
                 
                 
-                	<script type="text/javascript" src="./assets/js/calculator.js"></script>
+                
+                
+                	<script type="text/javascript" src="./assets/js/calculator.js" defer></script>
             </div>
         </div>
     </div>
@@ -192,16 +194,15 @@
         </svg>
         		<p class="calculator-error__title">There was an error with your calculation.</p>
         	</div>
-        	<div class="col" id="error-list">
-        	</div>
+        	<div class="col" id="error-list"></div>
         </div>        <span id="calculator_result"><div class="calculator-result col">
 	<p class="table-cell table-cell--dark table-cell--only-title">Time</p>
 	<div class="table-cell table-cell--only row">
-		<div class="col result-age__text">
+		<div class="col result-age__text animate">
 			<p class="result-text" id="result">350 days 19 hours 40 minutes 50 seconds</p>
-			<p class="result-text" id="result-in-days">or 350.82002315 days</p>
-			<p class="result-text" id="result-in-hours">or 8419.68056 hours</p>
-			<p class="result-text" id="result-in-minutes">or 505180.83333 minutes</p>
+			<p class="result-text" id="result-in-days">or 350.82 days</p>
+			<p class="result-text" id="result-in-hours">or 8419.68 hours</p>
+			<p class="result-text" id="result-in-minutes">or 505180.83 minutes</p>
 			<p class="result-text" id="result-in-seconds">or 30310850 seconds</p>
 		</div>
 	</div>

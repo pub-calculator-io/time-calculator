@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-    <meta name="description" content="This free time calculator allows you to add and subtract time values using days, hours, minutes, and seconds. Learn about the different concepts of time here as well.">
+    <meta name="description" content="Easily add or subtract days, hours, minutes, and seconds with our free Time Calculator. Calculate time durations instantly and accurately.">
     <link rel="preload" href="./assets/fonts/inter-v12-latin-regular.woff2" as="font" crossorigin type="font/woff2">
     <link rel="preload" href="./assets/fonts/inter-v12-latin-500.woff2" as="font" crossorigin type="font/woff2">
     <link rel="preload" href="./assets/fonts/inter-v12-latin-600.woff2" as="font" crossorigin type="font/woff2">
@@ -28,7 +28,7 @@
             <div class="calculator-setting" id="calculator_form">
                 <div class="calculator-content col">
                 	<div class="input-wrapper row">
-                		<label class="input col age-calculator,time-duration-calculator,date-calculator,time-to-decimal-calculator,days-calculator  ">
+                		<label class="input col age-calculator,time-duration-calculator,date-calculator,time-to-decimal-calculator,days-calculator,timer  ">
                 			<p class="input__title">Day</p>
                 			<div class="input-field row">
                 				<input type="text" class="input-field__input" placeholder=""  id="one_day" value="125"  />
@@ -42,7 +42,7 @@
                 					<span class="input-hints__hint input-hints__hint--comma">,</span>
                 					<button class="input-hints__hint" onclick="setValue('one_day', '5')">5</button>
                 			</div>
-                		</label>		<label class="input col age-calculator,time-duration-calculator,date-calculator,time-to-decimal-calculator,days-calculator  ">
+                		</label>		<label class="input col age-calculator,time-duration-calculator,date-calculator,time-to-decimal-calculator,days-calculator,timer  ">
                 			<p class="input__title">Hour</p>
                 			<div class="input-field row">
                 				<input type="text" class="input-field__input" placeholder=""  id="one_hour" value="7"  />
@@ -56,7 +56,7 @@
                 					<span class="input-hints__hint input-hints__hint--comma">,</span>
                 					<button class="input-hints__hint" onclick="setValue('one_hour', '10')">10</button>
                 			</div>
-                		</label>		<label class="input col age-calculator,time-duration-calculator,date-calculator,time-to-decimal-calculator,days-calculator  ">
+                		</label>		<label class="input col age-calculator,time-duration-calculator,date-calculator,time-to-decimal-calculator,days-calculator,timer  ">
                 			<p class="input__title">Minute</p>
                 			<div class="input-field row">
                 				<input type="text" class="input-field__input" placeholder=""  id="one_minute" value="15"  />
@@ -70,7 +70,7 @@
                 					<span class="input-hints__hint input-hints__hint--comma">,</span>
                 					<button class="input-hints__hint" onclick="setValue('one_minute', '30')">30</button>
                 			</div>
-                		</label>		<label class="input col age-calculator,time-duration-calculator,date-calculator,time-to-decimal-calculator,days-calculator  ">
+                		</label>		<label class="input col age-calculator,time-duration-calculator,date-calculator,time-to-decimal-calculator,days-calculator,timer  ">
                 			<p class="input__title">Second</p>
                 			<div class="input-field row">
                 				<input type="text" class="input-field__input" placeholder=""  id="one_second" value="30"  />
@@ -89,7 +89,7 @@
                 		<label class="input col">
                 			<input type="hidden" value="add" id="add_subtract"/>
                 			
-                			<button class="button-switcher button-switcher--active" type="button" onclick="switcher(this, 'add_subtract', '')" value="add" id="add_subtract-a">
+                			<button class="button-switcher button-switcher--active" type="button" onclick="switcher(this, 'add_subtract', '')" value="add" id="add_subtract-1">
                 					<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="js-add-button">
                 			<path fill='#9CA3AF' fill-rule="evenodd" clip-rule="evenodd" d="M10.25 3C10.8023 3 11.25 3.44772 11.25 4V9H16.25C16.8023 9 17.25 9.44772 17.25 10C17.25 10.5523 16.8023 11 16.25 11H11.25V16C11.25 16.5523 10.8023 17 10.25 17C9.69772 17 9.25 16.5523 9.25 16V11H4.25C3.69772 11 3.25 10.5523 3.25 10C3.25 9.44771 3.69772 9 4.25 9L9.25 9V4C9.25 3.44772 9.69772 3 10.25 3Z"></path>
                 		</svg>
@@ -98,7 +98,7 @@
                 		</label>
                 		<label class="input col">
                 			
-                			<button class="button-switcher" type="button" onclick="switcher(this, 'add_subtract', '')" value="subtract" id="add_subtract-b">
+                			<button class="button-switcher" type="button" onclick="switcher(this, 'add_subtract', '')" value="subtract" id="add_subtract-2">
                 					<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 			<path fill='#9CA3AF' fill-rule="evenodd" clip-rule="evenodd" d="M3.75 10C3.75 9.73478 3.85536 9.48043 4.04289 9.29289C4.23043 9.10536 4.48478 9 4.75 9H16.75C17.0152 9 17.2696 9.10536 17.4571 9.29289C17.6446 9.48043 17.75 9.73478 17.75 10C17.75 10.2652 17.6446 10.5196 17.4571 10.7071C17.2696 10.8946 17.0152 11 16.75 11H4.75C4.48478 11 4.23043 10.8946 4.04289 10.7071C3.85536 10.5196 3.75 10.2652 3.75 10Z"></path>
                 		</svg>
@@ -107,7 +107,7 @@
                 		</label>
                 	</div>
                 	<div class="input-wrapper row">
-                		<label class="input col age-calculator,time-duration-calculator,date-calculator,time-to-decimal-calculator,days-calculator  ">
+                		<label class="input col age-calculator,time-duration-calculator,date-calculator,time-to-decimal-calculator,days-calculator,timer  ">
                 			<p class="input__title">Day</p>
                 			<div class="input-field row">
                 				<input type="text" class="input-field__input" placeholder=""  id="two_day" value="225"  />
@@ -121,7 +121,7 @@
                 					<span class="input-hints__hint input-hints__hint--comma">,</span>
                 					<button class="input-hints__hint" onclick="setValue('two_day', '5')">5</button>
                 			</div>
-                		</label>		<label class="input col age-calculator,time-duration-calculator,date-calculator,time-to-decimal-calculator,days-calculator  ">
+                		</label>		<label class="input col age-calculator,time-duration-calculator,date-calculator,time-to-decimal-calculator,days-calculator,timer  ">
                 			<p class="input__title">Hour</p>
                 			<div class="input-field row">
                 				<input type="text" class="input-field__input" placeholder=""  id="two_hour" value="12"  />
@@ -135,7 +135,7 @@
                 					<span class="input-hints__hint input-hints__hint--comma">,</span>
                 					<button class="input-hints__hint" onclick="setValue('two_hour', '10')">10</button>
                 			</div>
-                		</label>		<label class="input col age-calculator,time-duration-calculator,date-calculator,time-to-decimal-calculator,days-calculator  ">
+                		</label>		<label class="input col age-calculator,time-duration-calculator,date-calculator,time-to-decimal-calculator,days-calculator,timer  ">
                 			<p class="input__title">Minute</p>
                 			<div class="input-field row">
                 				<input type="text" class="input-field__input" placeholder=""  id="two_minute" value="25"  />
@@ -149,7 +149,7 @@
                 					<span class="input-hints__hint input-hints__hint--comma">,</span>
                 					<button class="input-hints__hint" onclick="setValue('two_minute', '30')">30</button>
                 			</div>
-                		</label>		<label class="input col age-calculator,time-duration-calculator,date-calculator,time-to-decimal-calculator,days-calculator  ">
+                		</label>		<label class="input col age-calculator,time-duration-calculator,date-calculator,time-to-decimal-calculator,days-calculator,timer  ">
                 			<p class="input__title">Second</p>
                 			<div class="input-field row">
                 				<input type="text" class="input-field__input" placeholder=""  id="two_second" value="20"  />
@@ -166,12 +166,16 @@
                 		</label>	</div>
                 </div>
                 
-                <div class="calculator-content calculator-content--gray calculator-content--footer calculator-content--small row  " >
+                <div class="calculator-content calculator-content--gray calculator-content--footer calculator-content--small row  "
+                	>
                 
                 
                 
                 
-                	<button class="button button--primary ml-auto" onclick="calculate(this); animateElements();" data-action="calculate" id="action-button">Calculate</button>
+                
+                	<button class="button button--primary  ml-auto "
+                		onclick="calculate(this); animateElements();" data-action="calculate"
+                		id="action-button">Calculate</button>
                 </div>
                 
                 
@@ -179,7 +183,7 @@
                 
                 
                 
-                	<script type="text/javascript" src="./assets/js/calculator.js" defer></script>
+                <script type="text/javascript" src="./assets/js/calculator.js" defer></script>
             </div>
         </div>
     </div>
